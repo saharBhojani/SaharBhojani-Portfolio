@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sahar Fatima Bhojani — Multidisciplinary Designer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&amp;family=Space+Grotesk:wght@300;400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: #04060B; color: #FFFFFF; -webkit-font-smoothing: antialiased; }
+  a { color: inherit; text-decoration: none; }
+  a:hover { color: #ffffff; }
+  ::selection { background: #FFFFFF; color: #04060B; }
+  input, textarea { font: inherit; color: inherit; }
+  input::placeholder, textarea::placeholder { color: #5F7C9E; }
+  @keyframes slide-marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+  @keyframes scroll-tick { 0% { transform: scaleY(0); transform-origin: top; } 50% { transform: scaleY(1); transform-origin: top; } 51% { transform: scaleY(1); transform-origin: bottom; } 100% { transform: scaleY(0); transform-origin: bottom; } }
+  @keyframes soft-pulse { 0%,100% { opacity: .3; } 50% { opacity: 1; } }
+  @keyframes hero-in { from { opacity: 0; letter-spacing: .3em; filter: blur(6px); } to { opacity: 1; letter-spacing: -.01em; filter: blur(0); } }
+  @keyframes rule-in { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+  @keyframes reveal-up { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: none; } }
+  @keyframes grain-shift { 0%,100% { transform: translate(0,0); } 25% { transform: translate(-2%,1%); } 50% { transform: translate(1%,-2%); } 75% { transform: translate(2%,2%); } }
+</style>
+</helmet>
+
+<div style="position: relative; min-height: 100vh; background: #04060B; color: #FFFFFF; font-family: 'Space Grotesk', Helvetica, sans-serif; overflow-x: hidden;">
+
+  <div style="position: fixed; inset: -6%; z-index: 70; pointer-events: none; opacity: .045; mix-blend-mode: screen; animation: grain-shift 7s steps(4) infinite; background-image: url(&quot;data:image/svg+xml;utf8,&lt;svg xmlns='http://www.w3.org/2000/svg' width='140' height='140'&gt;&lt;filter id='n'&gt;&lt;feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3'/&gt;&lt;/filter&gt;&lt;rect width='140' height='140' filter='url(%23n)'/&gt;&lt;/svg&gt;&quot;); left: -61px; top: -72px"></div>
+  <div data-progress="" style="position: fixed; top: 0; left: 0; z-index: 80; height: 1px; width: 0%; background: #FFFFFF;"></div>
+
+  <header style="position: fixed; top: 0; left: 0; right: 0; z-index: 60; display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: clamp(14px, 3vw, 44px); padding: 22px clamp(20px, 4vw, 56px); background: linear-gradient(#04060Bf0, #04060B00);">
+    <nav style="display: flex; justify-content: flex-end; gap: clamp(14px, 2.6vw, 40px); font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: .22em; text-transform: uppercase; color: #9FC6EE;">
+      <a href="#work" style="position: relative; padding-bottom: 4px; border-bottom: 1px solid transparent; transition: color .35s, border-color .35s;" style-hover="color: #fff; border-color: #6FB4FF;">Work</a>
+      <a href="#about" style="position: relative; padding-bottom: 4px; border-bottom: 1px solid transparent; transition: color .35s, border-color .35s;" style-hover="color: #fff; border-color: #6FB4FF;">About</a>
+    </nav>
+
+    <a href="#top" title="Sahar Fatima Bhojani" style="display: flex; align-items: center; justify-content: center; width: clamp(66px, 7vw, 84px); height: clamp(50px, 5.4vw, 60px); transition: transform .7s cubic-bezier(.2,.7,.2,1);" style-hover="transform: translateY(-2px);">
+      <svg viewBox="6 18 116 106" style="width: 100%; height: 100%; overflow: visible;" aria-label="SB monogram — Sahar Bhojani">
+        <text x="46" y="80" style="font-family: 'Bodoni Moda', Georgia, serif; font-weight: 400; font-size: 78px; fill: #FFFFFF;">S</text>
+        <text x="70" y="116" style="font-family: 'Bodoni Moda', Georgia, serif; font-weight: 400; font-size: 78px; fill: #FFFFFF;">B</text>
+        <path d="M74 58 C40 44 8 54 10 76 C12 94 40 92 60 74" fill="none" stroke="#6FB4FF" stroke-width="1.4" stroke-linecap="round" vector-effect="non-scaling-stroke"></path>
+      </svg>
+    </a>
+
+    <nav style="display: flex; justify-content: flex-start; gap: clamp(14px, 2.6vw, 40px); font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: .22em; text-transform: uppercase; color: #9FC6EE;">
+      <a href="#playground" style="padding-bottom: 4px; border-bottom: 1px solid transparent; transition: color .35s, border-color .35s;" style-hover="color: #fff; border-color: #6FB4FF;">Playground</a>
+      <a href="#skills" style="padding-bottom: 4px; border-bottom: 1px solid transparent; transition: color .35s, border-color .35s;" style-hover="color: #fff; border-color: #6FB4FF;">Skills</a>
+      <a href="#contact" style="padding: 9px 18px; border-radius: 999px; background: #FFFFFF; color: #04060B; transition: background .4s, color .4s;" style-hover="background: #6FB4FF; color: #04060B;">Contact</a>
+    </nav>
+  </header>
+
+  <div style="position: fixed; left: clamp(14px, 2.6vw, 34px); bottom: clamp(20px, 4vh, 48px); z-index: 55; display: flex; flex-direction: column; gap: 16px; font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: .16em; text-transform: uppercase; color: #6E8BB0;">
+    <a href="https://www.linkedin.com/in/saharfatimabhojani" style-hover="color: #fff;">Li</a>
+    <a href="mailto:saharfatimaa2005@gmail.com" style-hover="color: #fff;">Em</a>
+    <a href="tel:+601161254723" style-hover="color: #fff;">Tel</a>
+  </div>
+
+  <div style="position: fixed; right: clamp(14px, 2.4vw, 30px); bottom: clamp(20px, 4vh, 48px); z-index: 55; display: flex; flex-direction: column; align-items: center; gap: 14px;">
+    <span style="writing-mode: vertical-rl; font-family: 'JetBrains Mono', monospace; font-size: 9px; letter-spacing: .34em; text-transform: uppercase; color: #6E8BB0;">Scroll</span>
+    <span style="display: block; width: 1px; height: 58px; background: #FFFFFF; animation: scroll-tick 3.2s ease-in-out infinite;"></span>
+  </div>
+
+  <section id="top" style="position: relative; min-height: 88vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 104px clamp(28px, 5vw, 80px) 72px;">
+    <div style="position: absolute; inset: 0; pointer-events: none; background: radial-gradient(58% 42% at 50% 108%, #4E93D8 0%, #04060B 70%), radial-gradient(56% 40% at 50% -12%, #2E6FB0 0%, #04060B 68%), radial-gradient(70% 55% at 50% 45%, #0A1424 0%, #04060B 80%);"></div>
+    <div style="position: relative; display: flex; align-items: center; gap: 18px; margin-bottom: clamp(16px, 2.6vw, 28px);">
+      <span style="display: block; width: clamp(30px, 7vw, 90px); height: 1px; background: #6FB4FF; animation: rule-in 1.4s .3s cubic-bezier(.2,.7,.2,1) both;"></span>
+      <span style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: .42em; text-transform: uppercase; color: #9FC6EE;">I am</span>
+      <span style="display: block; width: clamp(30px, 7vw, 90px); height: 1px; background: #6FB4FF; animation: rule-in 1.4s .3s cubic-bezier(.2,.7,.2,1) both;"></span>
+    </div>
+    <h1 style="position: relative; margin: 0; font-weight: 700; font-size: clamp(72px, 19vw, 300px); line-height: .84; letter-spacing: -.03em; text-transform: uppercase; animation: hero-in 1.6s cubic-bezier(.2,.7,.2,1) both;">Sahar</h1><p style="position: relative; margin: clamp(6px, 1.2vw, 14px) 0 0; font-weight: 400; font-size: clamp(14px, 1.9vw, 26px); line-height: 1; letter-spacing: .24em; text-transform: uppercase; color: #C3D5EA; animation: hero-in 1.8s .25s cubic-bezier(.2,.7,.2,1) both;">Fatima Bhojani</p>
+    
+    <p data-reveal="" style="animation: reveal-up 1.1s .15s cubic-bezier(.2,.7,.2,1) both; position: relative; margin: clamp(22px, 3.4vw, 38px) 0 0; font-family: 'JetBrains Mono', monospace; font-size: clamp(10px, .9vw, 12px); letter-spacing: .38em; text-transform: uppercase; color: #9FC6EE;">Multidisciplinary designer</p>
+    <p data-reveal="" style="animation: reveal-up 1.1s .15s cubic-bezier(.2,.7,.2,1) both; position: relative; margin: clamp(26px, 4vw, 44px) 0 0; max-width: 40ch; font-family: 'Bodoni Moda', Georgia, serif; font-size: clamp(17px, 1.6vw, 24px); font-style: italic; line-height: 1.5; color: #C3D5EA; text-wrap: pretty;">UI/UX · product · branding · creative technology — structure first, then the detail turned all the way up.</p>
+  </section>
+
+  <div style="overflow: hidden; border-top: 1px solid #1A2534; border-bottom: 1px solid #1A2534; padding: 16px 0; background: #04060B;">
+    <div style="display: flex; width: max-content; gap: 48px; animation: slide-marquee 42s linear infinite; font-family: 'JetBrains Mono', monospace; font-size: 11px; letter-spacing: .3em; text-transform: uppercase; white-space: nowrap; color: #6E8BB0;">
+      <span>UI/UX design — product design — branding — creative technology — editorial &amp; type — art direction —&nbsp;</span>
+      <span>UI/UX design — product design — branding — creative technology — editorial &amp; type — art direction —&nbsp;</span>
+    </div>
+  </div>
+
+  <section id="work" style="padding: clamp(56px, 7vw, 96px) clamp(28px, 5vw, 80px) 0;">
+    <div data-reveal="" style="animation: reveal-up 1.1s .15s cubic-bezier(.2,.7,.2,1) both; max-width: 1280px; margin: 0 auto clamp(50px, 7vw, 90px);">
+      <div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 16px; padding-bottom: 18px; border-bottom: 1px solid #1A2534;">
+        <div style="display: flex; flex-direction: column; gap: 8px;">
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 9px; letter-spacing: .34em; text-transform: uppercase; color: #6E8BB0;">Also — Photography</span>
+          <h2 style="margin: 0; font-family: 'Bodoni Moda', Georgia, serif; font-weight: 400; font-size: clamp(26px, 4.4vw, 60px); line-height: 1; letter-spacing: -.02em;">Through the <span style="font-style: italic; color: #9FC6EE;">lens</span></h2>
+        </div>
+        <p style="margin: 0; max-width: 34ch; font-size: 14px; line-height: 1.6; color: #A9BFDD; text-wrap: pretty;">Portrait, street, still life and travel — shooting is how I practise looking.</p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: clamp(16px, 2.4vw, 38px); margin-top: clamp(22px, 3vw, 38px); align-items: start; max-width: 1080px; margin-left: auto; margin-right: auto;">
+        <a href="Photography.dc.html" style="display: block; transition: transform .7s cubic-bezier(.2,.7,.2,1), filter .7s;" style-hover="transform: translateY(-10px); filter: brightness(1.06);">
+          <img src="uploads/opt/fr-silhouette.jpg" alt="Silhouette against a red wall" loading="lazy" decoding="async" style="width: 100%; height: auto; display: block; box-shadow: 0 18px 44px #04060B;">
+        </a>
+        <a href="Photography.dc.html" style="display: block;  margin-top: clamp(20px, 3.4vw, 54px); transition: transform .7s cubic-bezier(.2,.7,.2,1), filter .7s;" style-hover="transform: translateY(-10px); filter: brightness(1.06);">
+          <img src="uploads/opt/fr-clocktower.jpg" alt="Sultan Abdul Samad clock tower against the Maybank tower" loading="lazy" decoding="async" style="width: 100%; height: auto; display: block; box-shadow: 0 18px 44px #04060B;">
+        </a>
+        <a href="Photography.dc.html" style="display: block; transition: transform .7s cubic-bezier(.2,.7,.2,1), filter .7s;" style-hover="transform: translateY(-10px); filter: brightness(1.06);">
+          <img src="uploads/opt/fr-petronas.jpg" alt="Petronas tower at night" loading="lazy" decoding="async" style="width: 100%; height: auto; display: block; box-shadow: 0 18px 44px #04060B;">
+        </a>
+      </div>
+
+      <div style="display: flex; justify-content: center; margin-top: clamp(22px, 3vw, 36px);">
+        <a href="Photography.dc.html" style="padding: 15px 32px; border: 1px solid #26364A; font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: .24em; text-transform: uppercase; transition: background .45s, color .45s, border-color .45s;" style-hover="background: #FFFFFF; color: #04060B; border-color: #FFFFFF;">More pictures →</a>
+      </div>
+    </div>
+
+    <div style="text-align: center; margin: 0 auto; position: relative; z-index: 2;">
+      <p style="margin: 0 0 14px; font-family: 'JetBrains Mono', monospace; font-size: 9px; letter-spacing: .34em; text-transform: uppercase; color: #6E8BB0;">01 — Work</p>
+      <h2 style="margin: 0; font-weight: 700; font-size: clamp(30px, 6vw, 88px); line-height: 1; letter-spacing: -.01em; text-transform: uppercase; text-shadow: 0 4px 40px #04060B;">Selected work</h2>
+      <p style="margin: clamp(14px, 2vw, 22px) 0 0; font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: .3em; text-transform: uppercase; color: #9FC6EE;">Three projects — concept to prototype</p>
+    </div>
+
+    <div style="max-width: 1280px; margin: clamp(40px, 5vw, 68px) auto 0;">
+      <sc-for list="{{ projects }}" as="p" hint-placeholder-count="3">
+        <article data-reveal="" style="animation: reveal-up 1.1s .15s cubic-bezier(.2,.7,.2,1) both; border-top: 1px solid #1A2534; padding: clamp(26px, 3.4vw, 44px) 0; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr); gap: clamp(20px, 4vw, 60px); align-items: center;">
+          <div style="display: flex; flex-direction: column; gap: clamp(14px, 2vw, 22px);">
+            <span style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: .3em; color: #6E8BB0;">{{ p.n }} / {{ p.year }}</span>
+            <h3 style="margin: 0; font-weight: 700; font-size: clamp(28px, 4.4vw, 62px); line-height: .98; letter-spacing: -.01em; text-transform: uppercase;">{{ p.title }}</h3>
+            <p style="margin: 0; max-width: 40ch; font-family: 'Bodoni Moda', Georgia, serif; font-size: clamp(16px, 1.4vw, 21px); line-height: 1.55; color: #B6CADF; text-wrap: pretty;">{{ p.blurb }}</p>
+            <span style="font-family: 'JetBrains Mono', monospace; font-size: 9px; letter-spacing: .2em; text-transform: uppercase; color: #8AAED4;">{{ p.tags }}</span>
+            <a href="{{ p.href }}" style="width: fit-content; margin-top: 6px; padding: 13px 26px; border: 1px solid #26364A; font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: .22em; text-transform: uppercase; transition: background .5s, color .5s, border-color .5s;" style-hover="background: #FFFFFF; color: #04060B; border-color: #FFFFFF;">{{ p.cta }}</a>
+          </div>
+          <a href="{{ p.href }}" style="position: relative; display: block; aspect-ratio: 16/10; background-image: {{ p.hatch }}; background-color: #080C14; border: 1px solid #1A2534; overflow: hidden; transition: border-color .7s, transform .7s cubic-bezier(.2,.7,.2,1);" style-hover="border-color: #6FB4FF; transform: translateY(-6px);">
+            <img alt="{{ p.slot }}" loading="lazy" decoding="async" style="width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%;" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'/%3E" data-src="{{ p.img }}">
+            <sc-if value="{{ p.showSlot }}" hint-placeholder-val="{{ true }}">
+              <span style="position: absolute; left: 14px; bottom: 12px; font-family: 'JetBrains Mono', monospace; font-size: 9px; letter-spacing: .16em; text-transform: uppercase; color: #FFFFFF; text-shadow: 0 1px 8px #04060B;">{{ p.slot }}</span>
+            </sc-if>
+          </a>
+        </article>
+      </sc-for>
+
+      <div style="border-top: 1px solid #1A2534;">
+        <p style="margin: 0; padding: 26px 0 6px; font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: .3em; text-transform: uppercase; color: #9FC6EE;">Index — other work</p>
+        <sc-for list="{{ indexRows }}" as="row" hint-placeholder-count="5">
+          <a href="{{ row.href }}" style="display: grid; grid-template-columns: 42px minmax(0, 1fr) auto auto; gap: clamp(12px, 3vw, 40px); align-items: baseline; padding: 20px 4px; border-top: 1px solid #080C14; transition: background .4s, padding-left .4s;" style-hover="background: #080C14; padding-left: 14px;">
+            <span style="font-family: 'JetBrains Mono', monospace; font-size: 10px; color: #6E8BB0;">{{ row.n }}</span>
+            <span style="font-size: clamp(15px, 1.7vw, 22px); font-weight: 500; text-transform: uppercase; letter-spacing: .02em;">{{ row.title }}</span>
+            <span style="font-family: 'JetBrains Mono', monospace; font-size: 9px; letter-spacing: .18em; text-transform: uppercase; color: #8AAED4;">{{ row.role }}</span>
+            <span style="font-family: 'JetBrains Mono', monospace; font-size: 9px; color: #6E8BB0;">{{ row.year }}</span>
+          </a>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" style="padding: clamp(56px, 7vw, 96px) clamp(28px, 5vw, 80px); text-align: center;">
+    <p style="margin: 0 0 14px; font-family: 'JetBrains Mono', monospace; font-size: 9px; letter-spacing: .34em; text-transform: uppercase; color: #6E8BB0;">02 — About</p>
+    <h2 style="margin: 0 0 clamp(20px, 2.8vw, 34px); font-weight: 700; font-size: clamp(28px, 5vw, 74px); line-height: 1; letter-spacing: -.01em; text-transform: uppercase;">About me</h2>
+    <div style="max-width: 1240px; margin: 0 auto; display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: clamp(22px, 3.4vw, 48px); align-items: center; text-align: left;">
+      <div style="position: relative; aspect-ratio: 3/4; overflow: hidden; border: 1px solid #1A2534; background: #080C14;">
+        <img src="uploads/WTT05629.jpg" alt="Sahar Fatima Bhojani" loading="lazy" decoding="async" style="width: 100%; height: 100%; object-fit: cover; object-position: 50% 22%; transition: transform .8s cubic-bezier(.2,.7,.2,1);" style-hover="transform: scale(1.03);">
+        <span style="position: absolute; left: 14px; bottom: 12px; font-family: 'JetBrains Mono', monospace; font-size: 9px; letter-spacing: .16em; text-transform: uppercase; color: #d4d4d4; mix-blend-mode: difference;">Sahar — Malaysia</span>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: clamp(20px, 3vw, 34px);">
+        <p data-reveal="" style="animation: reveal-up 1.1s .15s cubic-bezier(.2,.7,.2,1) both; margin: 0; font-family: 'Bodoni Moda', Georgia, serif; font-size: clamp(21px, 2.4vw, 34px); font-style: italic; line-height: 1.32; color: #F3F6FB; text-wrap: pretty;">I design in the gap between craft and system — where a typeface choice and an information architecture are the same decision.</p>
+        <p style="margin: 0; font-size: 15px; line-height: 1.7; color: #AAC0D8; text-wrap: pretty;">Studying Graphics &amp; Multimedia at Sunway University on the Dean's List. I lead the media team for Sunway's international student ambassadors and assist in the design lab, teaching peers Figma and design fundamentals.</p>
+        <p style="margin: 0; font-size: 15px; line-height: 1.7; color: #AAC0D8; text-wrap: pretty;">My work moves between interface, identity and experiment — a redesign grounded in stakeholder interviews one week, a generative type study the next. I care most about clarity: say the thing plainly, then make it beautiful.</p>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(96px, 1fr)); gap: 18px; border-top: 1px solid #1A2534; padding-top: 24px;">
+          <sc-for list="{{ facts }}" as="f" hint-placeholder-count="4">
+            <div style="display: flex; flex-direction: column; gap: 7px;">
+              <span style="font-weight: 700; font-size: clamp(22px, 2.4vw, 34px); line-height: 1;">{{ f.v }}</span>
+              <span style="font-family: 'JetBrains Mono', monospace; font-size: 9px; letter-spacing: .16em; text-transform: uppercase; color: #8AAED4;">{{ f.k }}</span>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="playground" style="padding: clamp(52px, 6.5vw, 88px) clamp(28px, 5vw, 80px); background: #04060B; border-top: 1px solid #1A2534; border-bottom: 1px solid #1A2534;">
+    <div style="text-align: center; margin-bottom: clamp(26px, 3.4vw, 44px);">
+      <p style="margin: 0 0 14px; font-family: 'JetBrains Mono', monospace; font-size: 9px; letter-spacing: .34em; text-transform: uppercase; color: #6E8BB0;">03 — Playground</p>
+      <h2 style="margin: 0; font-weight: 700; font-size: clamp(28px, 5vw, 74px); line-height: 1; letter-spacing: -.01em; text-transform: uppercase;">Design trivia</h2>
+      <p style="margin: 14px 0 0; font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: .3em; text-transform: uppercase; color: #9FC6EE;">Three levels · five questions each · fifteen points</p>
+    </div>
+
+    <div style="max-width: 1060px; margin: 0 auto; border: 1px solid #1A2534; background: #080C14;">
+
+      <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr));">
+        <sc-for list="{{ qzLevels }}" as="lv" hint-placeholder-count="3">
+          <button type="button" onClick="{{ lv.pick }}" style="display: flex; flex-direction: column; gap: 7px; align-items: flex-start; padding: clamp(16px, 2.2vw, 24px); background: {{ lv.bg }}; color: {{ lv.fg }}; border: 0; border-right: 1px solid #1A2534; border-bottom: 1px solid #1A2534; cursor: pointer; text-align: left; font-family: inherit; transition: background .4s, color .4s;">
+            <span style="font-family: 'JetBrains Mono', monospace; font-size: 9px; letter-spacing: .26em; text-transform: uppercase; color: {{ lv.meta }};">{{ lv.tag }}</span>
+            <span style="font-family: 'Bodoni Moda', Georgia, serif; font-size: clamp(19px, 2.3vw, 30px); line-height: 1;">{{ lv.name }}</span>
+            <span style="font-family: 'JetBrains Mono', monospace; font-size: 9px; letter-spacing: .16em; text-transform: uppercase; color: {{ lv.meta }};">{{ lv.status }}</span>
+          </button>
+        </sc-for>
+      </div>
+
+      <sc-if value="{{ qzAsking }}" hint-placeholder-val="{{ true }}">
+        <div style="padding: clamp(22px, 3.4vw, 44px);">
+          <div style="display: flex; flex-wrap: wrap; gap: 14px; align-items: baseline; justify-content: space-between; margin-bottom: clamp(16px, 2.2vw, 26px);">
+            <span style="font-family: 'JetBrains Mono', monospace; font-size: 9px; letter-spacing: .26em; text-transform: uppercase; color: #6FB4FF;">{{ qzCounter }}</span>
+            <div style="display: flex; gap: 6px;">
+              <sc-for list="{{ qzDots }}" as="d" hint-placeholder-count="5">
+                <span style="width: 22px; height: 3px; background: {{ d.bg }};"></span>
+              </sc-for>
+            </div>
+          </div>
+
+          <p style="margin: 0 0 clamp(18px, 2.6vw, 30px); font-family: 'Bodoni Moda', Georgia, serif; font-size: clamp(21px, 3vw, 38px); line-height: 1.18; letter-spacing: -.01em; text-wrap: pretty; max-width: 30ch;">{{ qzQuestion }}</p>
+
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 10px;">
+            <sc-for list="{{ qzOptions }}" as="o" hint-placeholder-count="4">
+              <button type="button" onClick="{{ o.pick }}" style="display: flex; gap: 13px; align-items: flex-start; padding: 15px 17px; background: {{ o.bg }}; color: {{ o.fg }}; border: 1px solid {{ o.border }}; cursor: {{ o.cursor }}; text-align: left; font-family: inherit; font-size: 14px; line-height: 1.45; transition: background .3s, border-color .3s, color .3s;">
+                <span style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: .1em; color: {{ o.key }}; padding-top: 2px;">{{ o.letter }}</span>
+                <span style="text-wrap: pretty;">{{ o.text }}</span>
+              </button>
+            </sc-for>
+          </div>
+
+          <sc-if value="{{ qzFeedback }}" hint-placeholder-val="{{ false }}">
+            <div style="display: flex; flex-wrap: wrap; gap: 18px; align-items: center; justify-content: space-between; margin-top: clamp(18px, 2.4vw, 26px); padding-top: clamp(16px, 2.2vw, 22px); border-top: 1px solid #1A2534;">
+              <p style="margin: 0; max-width: 58ch; font-size: 13.5px; line-height: 1.65; color: #A9BFDD; text-wrap: pretty;"><strong style="color: {{ qzVerdictColor }}; font-weight: 500;">{{ qzVerdict }}</strong> {{ qzWhy }}</p>
+              <button type="button" onClick="{{ qzNext }}" style="padding: 13px 26px; background: #FFFFFF; color: #04060B; border: 0; font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: .22em; text-transform: uppercase; cursor: pointer; transition: background .4s;" style-hover="background: #6FB4FF;">{{ qzNextLabel }}</button>
+            </div>
+          </sc-if>
+        </div>
+      </sc-if>
+
+      <sc-if value="{{ qzScoring }}" hint-placeholder-val="{{ false }}">
+        <div style="padding: clamp(24px, 3.6vw, 48px); display: flex; flex-direction: column; gap: clamp(14px, 2vw, 20px); align-items: flex-start;">
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 9px; letter-spacing: .3em; text-transform: uppercase; color: #6FB4FF;">{{ qzScoreTag }}</span>
+          <p style="margin: 0; font-family: 'Bodoni Moda', Georgia, serif; font-size: clamp(34px, 6vw, 76px); line-height: .95; letter-spacing: -.03em;">{{ qzScoreLine }}</p>
+          <p style="margin: 0; max-width: 52ch; font-size: 14.5px; line-height: 1.7; color: #A9BFDD; text-wrap: pretty;">{{ qzScoreNote }}</p>
+          <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 4px;">
+            <button type="button" onClick="{{ qzContinue }}" style="padding: 14px 28px; background: #FFFFFF; color: #04060B; border: 0; font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: .22em; text-transform: uppercase; cursor: pointer; transition: background .4s;" style-hover="background: #6FB4FF;">{{ qzContinueLabel }}</button>
+            <button type="button" onClick="{{ qzRetry }}" style="padding: 14px 28px; background: transparent; color: #E9EFF7; border: 1px solid #26364A; font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: .22em; text-transform: uppercase; cursor: pointer; transition: border-color .4s, background .4s;" style-hover="border-color: #FFFFFF; background: #04060B;">Replay this level</button>
+          </div>
+        </div>
+      </sc-if>
+
+      <sc-if value="{{ qzFinal }}" hint-placeholder-val="{{ false }}">
+        <div style="padding: clamp(26px, 4vw, 54px); background: linear-gradient(150deg, #0A1424 0%, #04060B 74%); display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: clamp(24px, 3.4vw, 46px); align-items: start;">
+          <div style="display: flex; flex-direction: column; gap: 16px;">
+            <span style="font-family: 'JetBrains Mono', monospace; font-size: 9px; letter-spacing: .3em; text-transform: uppercase; color: #6FB4FF;">Final verdict · {{ qzTotal }} / 15</span>
+            <p style="margin: 0; font-family: 'Bodoni Moda', Georgia, serif; font-size: clamp(30px, 4.6vw, 58px); line-height: .98; letter-spacing: -.03em;">{{ qzTitle }}</p>
+            <p style="margin: 0; max-width: 40ch; font-size: 14.5px; line-height: 1.7; color: #A9BFDD; text-wrap: pretty;">{{ qzTitleNote }}</p>
+            <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 6px;">
+              <button type="button" onClick="{{ qzRestart }}" style="padding: 14px 28px; background: #FFFFFF; color: #04060B; border: 0; font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: .22em; text-transform: uppercase; cursor: pointer; transition: background .4s;" style-hover="background: #6FB4FF;">Play again</button>
+              <a href="#contact" style="padding: 14px 28px; border: 1px solid #26364A; font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: .22em; text-transform: uppercase; transition: border-color .4s;" style-hover="border-color: #FFFFFF;">Argue with me →</a>
+            </div>
+          </div>
+          <blockquote style="margin: 0; padding-left: clamp(16px, 2vw, 26px); border-left: 1px solid #6FB4FF; display: flex; flex-direction: column; gap: 14px;">
+            <span style="font-family: 'Bodoni Moda', Georgia, serif; font-style: italic; font-size: clamp(19px, 2.3vw, 28px); line-height: 1.35; color: #E9EFF7; text-wrap: pretty;">“{{ qzQuote }}”</span>
+            <span style="font-family: 'JetBrains Mono', monospace; font-size: 9px; letter-spacing: .24em; text-transform: uppercase; color: #6E8BB0;">{{ qzQuoteBy }}</span>
+          </blockquote>
+        </div>
+      </sc-if>
+
+      <sc-if value="{{ qzIdle }}" hint-placeholder-val="{{ false }}">
+        <div style="padding: clamp(24px, 3.6vw, 46px); display: flex; flex-wrap: wrap; gap: 22px; align-items: center; justify-content: space-between;">
+          <p style="margin: 0; max-width: 52ch; font-size: 15px; line-height: 1.7; color: #A9BFDD; text-wrap: pretty;">Pick a level and answer five questions on type, hierarchy, colour, accessibility and process — the things I actually argue about in critique. Clear all three and you get a verdict, plus a quote you may or may not deserve.</p>
+          <button type="button" onClick="{{ qzStart }}" style="padding: 15px 32px; background: #FFFFFF; color: #04060B; border: 0; font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: .24em; text-transform: uppercase; cursor: pointer; transition: background .4s;" style-hover="background: #6FB4FF;">Start with easy →</button>
+        </div>
+      </sc-if>
+    </div>
+  </section>
+
+  <section id="skills" style="padding: clamp(56px, 7vw, 96px) clamp(28px, 5vw, 80px);">
+    <div style="text-align: center; margin-bottom: clamp(26px, 3.4vw, 44px);">
+      <p style="margin: 0 0 14px; font-family: 'JetBrains Mono', monospace; font-size: 9px; letter-spacing: .34em; text-transform: uppercase; color: #6E8BB0;">04 — Skills</p>
+      <h2 style="margin: 0; font-weight: 700; font-size: clamp(28px, 5vw, 74px); line-height: 1; letter-spacing: -.01em; text-transform: uppercase;">Skills &amp; tools</h2>
+    </div>
+    <div style="max-width: 1280px; margin: 0 auto;">
+      <sc-for list="{{ skillGroups }}" as="g" hint-placeholder-count="4">
+        <div style="display: grid; grid-template-columns: minmax(0, 44px) minmax(0, 290px) minmax(0, 1fr); gap: clamp(16px, 3vw, 46px); align-items: baseline; padding: clamp(22px, 3vw, 34px) 6px; border-top: 1px solid #1A2534; transition: background .45s, padding-left .45s;" style-hover="background: #080C14; padding-left: 16px;">
+          <span style="font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: .1em; color: #6FB4FF;">{{ g.n }}</span>
+          <div style="display: flex; flex-direction: column; gap: 8px;">
+            <span style="font-family: 'Bodoni Moda', Georgia, serif; font-size: clamp(22px, 2.8vw, 40px); line-height: 1.05;">{{ g.label }}</span>
+            <span style="font-family: 'JetBrains Mono', monospace; font-size: 9px; letter-spacing: .18em; text-transform: uppercase; color: #6E8BB0;">{{ g.note }}</span>
+          </div>
+          <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+            <sc-for list="{{ g.items }}" as="it" hint-placeholder-count="5">
+              <span style="padding: 9px 15px; border: 1px solid #202C3D; border-radius: 999px; font-size: 13px; color: #E9EFF7; transition: border-color .4s, color .4s;" style-hover="border-color: #6FB4FF; color: #FFFFFF;">{{ it }}</span>
+            </sc-for>
+          </div>
+        </div>
+      </sc-for>
+    </div>
+  </section>
+
+  <section id="contact" style="padding: clamp(56px, 7vw, 92px) clamp(28px, 5vw, 80px) clamp(44px, 5vw, 64px); border-top: 1px solid #1A2534;">
+    <div style="max-width: 1240px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: clamp(24px, 3.4vw, 48px); align-items: start;">
+      <div style="display: flex; flex-direction: column; gap: clamp(20px, 3vw, 32px);">
+        <p style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 9px; letter-spacing: .34em; text-transform: uppercase; color: #6E8BB0;">05 — Contact</p>
+        <h2 style="margin: 0; font-weight: 700; font-size: clamp(30px, 5vw, 70px); line-height: 1; letter-spacing: -.01em; text-transform: uppercase;">Contact</h2>
+        <p style="margin: 0; max-width: 38ch; font-family: 'Bodoni Moda', Georgia, serif; font-size: clamp(17px, 1.6vw, 22px); font-style: italic; line-height: 1.5; color: #B6CADF; text-wrap: pretty;">Open to internships, freelance and collaborations — and to talking about work that hasn't been briefed yet.</p>
+        <div style="display: flex; flex-direction: column; gap: 22px;">
+          <sc-for list="{{ contactLines }}" as="c" hint-placeholder-count="3">
+            <div style="display: flex; flex-direction: column; gap: 7px;">
+              <span style="font-family: 'JetBrains Mono', monospace; font-size: 9px; letter-spacing: .24em; text-transform: uppercase; color: #8AAED4;">{{ c.k }}</span>
+              <a href="{{ c.href }}" style="font-size: clamp(15px, 1.5vw, 20px); border-bottom: 1px solid #26364A; padding-bottom: 5px; width: fit-content;" style-hover="border-color: #FFFFFF;">{{ c.v }}</a>
+            </div>
+          </sc-for>
+        </div>
+        <p style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 9px; letter-spacing: .2em; text-transform: uppercase; color: #8AAED4;">
+          <span style="display: inline-block; width: 6px; height: 6px; border-radius: 999px; background: #FFFFFF; margin-right: 9px; animation: soft-pulse 2.6s ease-in-out infinite;"></span>Replying within 24 hours
+        </p>
+      </div>
+
+      <div style="background: #080C14; border: 1px solid #1A2534; padding: clamp(24px, 3.4vw, 42px); display: flex; flex-direction: column; gap: clamp(18px, 2.4vw, 26px);">
+        <h3 style="margin: 0; font-weight: 700; font-size: clamp(18px, 1.8vw, 24px); letter-spacing: .04em; text-transform: uppercase;">Contact form</h3>
+        <sc-for list="{{ fields }}" as="f" hint-placeholder-count="3">
+          <input type="text" placeholder="{{ f }}" style="background: transparent; border: 0; border-bottom: 1px solid #202C3D; padding: 12px 2px; font-size: 14px; outline: none; transition: border-color .4s;" style-focus="border-color: #FFFFFF;">
+        </sc-for>
+        <textarea rows="4" placeholder="Message" style="background: transparent; border: 0; border-bottom: 1px solid #202C3D; padding: 12px 2px; font-size: 14px; outline: none; resize: vertical; transition: border-color .4s;" style-focus="border-color: #FFFFFF;"></textarea>
+        <button type="button" onClick="{{ onSend }}" style="margin-top: 6px; padding: 15px 20px; background: #080C14; color: #FFFFFF; border: 1px solid #26364A; font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: .24em; text-transform: uppercase; cursor: pointer; transition: background .45s, color .45s, border-color .45s;" style-hover="background: #FFFFFF; color: #04060B; border-color: #FFFFFF;">{{ sendLabel }}</button>
+      </div>
+    </div>
+
+    <div style="max-width: 1240px; margin: clamp(34px, 4.2vw, 56px) auto 0; padding-top: 24px; border-top: 1px solid #1A2534; display: flex; flex-wrap: wrap; gap: 20px; justify-content: space-between; font-family: 'JetBrains Mono', monospace; font-size: 9px; letter-spacing: .2em; text-transform: uppercase; color: #6E8BB0;">
+      <span>Malaysia</span>
+      <a href="https://www.linkedin.com/in/saharfatimabhojani" style-hover="color: #fff;">LinkedIn ↗</a>
+      <span>© 2026 Sahar Fatima Bhojani</span>
+    </div>
+  </section>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;motion&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Behavior&quot;}}">
+class Component extends DCLogic {
+  state = { sent: false, qLevel: null, qIdx: 0, qPicked: null, qRun: 0, qScores: [null, null, null], qPhase: 'idle' };
+  _hydrateImgs() {
+    document.querySelectorAll('img[data-src]').forEach(el => {
+      const real = el.getAttribute('data-src');
+      if (real && !real.includes('{{') && el.getAttribute('src') !== real) el.setAttribute('src', real);
+    });
+  }
+  componentDidUpdate() { this._hydrateImgs(); }
+  componentDidMount() {
+    this._hydrateImgs();
+    if (this.props.motion === false) {
+      document.querySelectorAll('[data-reveal]').forEach(el => { el.style.animation = 'none'; });
+      return;
+    }
+    const bar = document.querySelector('[data-progress]');
+    if (bar) {
+      const scroller = () => {
+        let n = document.body.parentElement;
+        while (n) {
+          if (n.scrollHeight > n.clientHeight + 20) return n;
+          n = n.parentElement;
+        }
+        return document.documentElement;
+      };
+      const tick = () => {
+        const s = scroller();
+        const top = window.scrollY || s.scrollTop || 0;
+        const max = s.scrollHeight - s.clientHeight;
+        bar.style.width = (max > 0 ? Math.min(100, (top / max) * 100) : 0) + '%';
+        this._raf = requestAnimationFrame(tick);
+      };
+      tick();
+    }
+  }
+  componentWillUnmount() {
+
+    if (this._raf) cancelAnimationFrame(this._raf);
+  }
+  QUIZ = [
+    {
+      name: 'Easy', tag: 'Level 01', qs: [
+        { q: 'What does a design system\u2019s "component library" mainly buy a team?', a: 1,
+          o: ['Prettier screens', 'Consistency and speed across many screens', 'Smaller file sizes', 'Better SEO'],
+          why: 'It is a reuse contract \u2014 one decision, applied everywhere, so the team argues about problems instead of button padding.' },
+        { q: 'In typography, what is kerning?', a: 2,
+          o: ['Space between lines', 'Overall letter tracking', 'Space between two specific letters', 'Font weight'],
+          why: 'Leading is between lines, tracking is across a run, kerning is the pair \u2014 AV, To, Wa.' },
+        { q: 'Which layout gives the eye a clear entry point fastest?', a: 0,
+          o: ['One dominant element plus quiet support', 'Four elements of equal weight', 'Everything centred', 'Full-width body text'],
+          why: 'Hierarchy needs contrast. If everything shouts, nothing is heard \u2014 pick what wins.' },
+        { q: 'What is a wireframe for?', a: 3,
+          o: ['Choosing final colours', 'Presenting to a client as final', 'Testing animation timing', 'Settling structure and priority before visuals'],
+          why: 'Cheap to change. You resolve what goes where and why, before anyone falls in love with a gradient.' },
+        { q: 'RGB vs CMYK \u2014 which pairing is right?', a: 1,
+          o: ['RGB for print, CMYK for screen', 'RGB for screen, CMYK for print', 'Both identical', 'CMYK for logos only'],
+          why: 'Additive light on screen, subtractive ink on paper. Send RGB to a printer and your blues go sad.' }
+      ]
+    },
+    {
+      name: 'Medium', tag: 'Level 02', qs: [
+        { q: 'Minimum contrast ratio for normal body text under WCAG AA?', a: 2,
+          o: ['2:1', '3:1', '4.5:1', '7:1'],
+          why: '4.5:1 for body, 3:1 for large text. 7:1 is AAA \u2014 aim there when you can.' },
+        { q: 'Five users into usability testing, you keep hearing the same problem. What now?', a: 0,
+          o: ['Stop, fix it, retest', 'Recruit twenty more for significance', 'Ship it and monitor analytics', 'Redesign the whole flow'],
+          why: 'Qualitative testing finds problems, not percentages. Five users surface most of the big ones \u2014 iterate, do not accumulate.' },
+        { q: 'Which is the strongest use of white space?', a: 3,
+          o: ['Filling gaps with decorative marks', 'Shrinking type to fit more in', 'Even margins everywhere', 'Grouping related things and separating unrelated ones'],
+          why: 'Proximity is a signal. Space is how you say "these belong together" without drawing a box.' },
+        { q: 'A modular type scale exists to\u2026', a: 1,
+          o: ['Save on font licences', 'Keep size relationships proportional and repeatable', 'Make text bigger on mobile', 'Improve font loading'],
+          why: 'A ratio gives you a small, defensible set of sizes \u2014 hierarchy becomes a system, not a guess per screen.' },
+        { q: 'Best moment to write the microcopy?', a: 0,
+          o: ['While designing the flow', 'After visual design is signed off', 'During development', 'Once localisation starts'],
+          why: 'Copy is interface. Design around real words and the layout stops fighting the message.' }
+      ]
+    },
+    {
+      name: 'Hard', tag: 'Level 03', qs: [
+        { q: 'Fitts\u2019s Law tells you that target acquisition time depends on\u2026', a: 2,
+          o: ['Colour contrast and label clarity', 'Number of options presented', 'Distance to the target and its size', 'How long the user has used the product'],
+          why: 'Far and small is slow. It is why primary actions sit big, close, and in the thumb zone.' },
+        { q: 'You have a 12-column grid and a 5-card row. Most defensible move?', a: 1,
+          o: ['Force 5 columns and break the grid silently', 'Change the row count or use a documented off-grid exception', 'Stretch cards to fill 12 unevenly', 'Centre 5 cards and ignore the gutters'],
+          why: 'Grids are agreements. Break one deliberately and write it down \u2014 an undocumented exception becomes everyone\u2019s bug.' },
+        { q: 'Which best describes an accessible focus state?', a: 3,
+          o: ['Removed for cleanliness', 'Relying on colour change alone', 'Visible only on hover', 'Visible, non-colour-only, and never suppressed'],
+          why: 'Keyboard users navigate by focus. outline: none with no replacement is the most common accessibility failure in portfolios.' },
+        { q: 'Optical alignment beats mathematical alignment when\u2026', a: 0,
+          o: ['Round or angled shapes sit beside flat-sided ones', 'Working in dark mode', 'Type is set below 12px', 'Using a strict baseline grid'],
+          why: 'A circle measured flush looks small. Overshoot it \u2014 the eye, not the ruler, is the client.' },
+        { q: 'A stakeholder wants a feature the research does not support. Strongest response?', a: 2,
+          o: ['Refuse on principle', 'Build it quietly and hope it fails', 'Reframe their goal, show the evidence, propose a cheap test', 'Add it as a hidden setting'],
+          why: 'Design is persuasion under constraint. You protect the user by giving the stakeholder a smaller, faster way to be right or wrong.' }
+      ]
+    }
+  ];
+
+  qzSetLevel(i) {
+    if (this.state.qScores[i] !== null) {
+      this.setState({ qLevel: i, qPhase: 'score', qIdx: 5, qPicked: null, qRun: this.state.qScores[i] });
+    } else {
+      this.setState({ qLevel: i, qPhase: 'ask', qIdx: 0, qPicked: null, qRun: 0 });
+    }
+  }
+
+  qzAnswer(i) {
+    if (this.state.qPicked !== null) return;
+    const lv = this.QUIZ[this.state.qLevel];
+    const correct = lv.qs[this.state.qIdx].a === i;
+    this.setState(st => ({ qPicked: i, qRun: st.qRun + (correct ? 1 : 0) }));
+  }
+
+  qzAdvance() {
+    const st = this.state;
+    if (st.qIdx >= 4) {
+      const scores = st.qScores.slice();
+      scores[st.qLevel] = st.qRun;
+      const allDone = scores.every(v => v !== null);
+      this.setState({ qScores: scores, qPhase: allDone ? 'final' : 'score', qPicked: null, qIdx: 5 });
+    } else {
+      this.setState({ qIdx: st.qIdx + 1, qPicked: null });
+    }
+  }
+
+  qzVals() {
+    const st = this.state;
+    const lvIdx = st.qLevel;
+    const total = st.qScores.reduce((a, v) => a + (v || 0), 0);
+    const done = st.qScores.filter(v => v !== null).length;
+
+    let title = '', note = '', quote = '', by = '';
+    if (total === 15) {
+      title = 'Genuinely dangerous';
+      note = 'Fifteen out of fifteen. You know the rules well enough to break them on purpose \u2014 which is the only kind of breaking that reads as intent. Come argue with me about grids.';
+      quote = 'The details are not the details. They make the design.';
+      by = 'Charles Eames';
+    } else if (total >= 12) {
+      title = 'A strong designer';
+      note = 'You have the fundamentals and the judgement. What is left is not knowledge \u2014 it is reps: more critique, more shipping, more defending decisions out loud.';
+      quote = 'Design is not just what it looks like and feels like. Design is how it works.';
+      by = 'Steve Jobs';
+    } else if (total >= 8) {
+      title = 'Getting sharp';
+      note = 'The instincts are there but the reasoning slips under pressure. Pick the questions you missed and go read the why \u2014 accessibility and hierarchy pay the fastest dividends.';
+      quote = 'Styles come and go. Good design is a language, not a style.';
+      by = 'Massimo Vignelli';
+    } else {
+      title = 'Still learning \u2014 good';
+      note = 'Every designer starts here, and knowing what you do not know is the whole first step. Structure and contrast before decoration; the rest follows.';
+      quote = 'You can only go forward by making mistakes.';
+      by = 'Alexander McQueen';
+    }
+
+    const vals = {
+      qzLevels: this.QUIZ.map((l, i) => {
+        const sc = st.qScores[i];
+        const active = i === lvIdx;
+        return {
+          name: l.name, tag: l.tag,
+          status: sc === null ? (active ? 'In play' : 'Not attempted') : sc + ' / 5 correct',
+          bg: active ? '#0F1A2C' : 'transparent',
+          fg: '#F3F6FB',
+          meta: active ? '#6FB4FF' : '#6E8BB0',
+          pick: () => this.qzSetLevel(i)
+        };
+      }),
+      qzIdle: st.qPhase === 'idle',
+      qzAsking: st.qPhase === 'ask',
+      qzScoring: st.qPhase === 'score',
+      qzFinal: st.qPhase === 'final',
+      qzStart: () => this.qzSetLevel(0),
+      qzRestart: () => this.setState({ qLevel: null, qPhase: 'idle', qIdx: 0, qPicked: null, qRun: 0, qScores: [null, null, null] }),
+      qzRetry: () => this.qzSetLevel(lvIdx === null ? 0 : lvIdx),
+      qzNext: () => this.qzAdvance(),
+      qzTotal: total,
+      qzTitle: title,
+      qzTitleNote: note,
+      qzQuote: quote,
+      qzQuoteBy: by
+    };
+
+    if (st.qPhase === 'ask' && lvIdx !== null) {
+      const lv = this.QUIZ[lvIdx];
+      const q = lv.qs[st.qIdx];
+      const picked = st.qPicked;
+      const answered = picked !== null;
+      vals.qzCounter = lv.name + ' \u00b7 question ' + (st.qIdx + 1) + ' of 5 \u00b7 ' + st.qRun + ' pt';
+      vals.qzQuestion = q.q;
+      vals.qzDots = [0, 1, 2, 3, 4].map(i => ({ bg: i < st.qIdx || (i === st.qIdx && answered) ? '#6FB4FF' : '#202C3D' }));
+      vals.qzOptions = q.o.map((text, i) => {
+        let bg = 'transparent', border = '#202C3D', fg = '#E9EFF7', key = '#6E8BB0';
+        if (answered) {
+          if (i === q.a) { bg = '#0D2A18'; border = '#3E9C63'; fg = '#DFF5E7'; key = '#7BD69C'; }
+          else if (i === picked) { bg = '#2A0F14'; border = '#9C4550'; fg = '#F6E1E4'; key = '#E08894'; }
+          else { fg = '#61748F'; }
+        }
+        return {
+          text, letter: ['A', 'B', 'C', 'D'][i], bg, border, fg, key,
+          cursor: answered ? 'default' : 'pointer',
+          pick: () => this.qzAnswer(i)
+        };
+      });
+      vals.qzFeedback = answered;
+      vals.qzVerdict = picked === q.a ? 'Correct.' : 'Not this time.';
+      vals.qzVerdictColor = picked === q.a ? '#7BD69C' : '#E08894';
+      vals.qzWhy = q.why;
+      vals.qzNextLabel = st.qIdx >= 4 ? 'See level score \u2192' : 'Next question \u2192';
+    }
+
+    if (st.qPhase === 'score' && lvIdx !== null) {
+      const sc = st.qScores[lvIdx] === null ? st.qRun : st.qScores[lvIdx];
+      const lv = this.QUIZ[lvIdx];
+      vals.qzScoreTag = lv.name + ' complete \u00b7 ' + done + ' of 3 levels cleared';
+      vals.qzScoreLine = sc + ' / 5';
+      vals.qzScoreNote = sc === 5
+        ? 'Clean sweep. Nothing to fix on this level \u2014 take the next one.'
+        : (sc >= 3
+          ? 'Solid. The misses were the interesting ones \u2014 read the explanations again before you move up.'
+          : 'Worth a second pass. The reasoning behind each answer matters more than the score.');
+      const nextIdx = st.qScores.findIndex(v => v === null);
+      vals.qzContinueLabel = nextIdx === -1 ? 'See final verdict \u2192' : 'Play ' + this.QUIZ[nextIdx].name + ' \u2192';
+      vals.qzContinue = () => {
+        if (nextIdx === -1) this.setState({ qPhase: 'final' });
+        else this.qzSetLevel(nextIdx);
+      };
+    }
+
+    return vals;
+  }
+
+  renderVals() {
+    return {
+      ...this.qzVals(),
+      sendLabel: this.state.sent ? 'Message sent ✓' : 'Send message',
+      onSend: () => this.setState({ sent: true }),
+      fields: ['Your name', 'Your phone', 'Your e-mail'],
+      projects: [
+        { n: '01', year: '2026', title: 'Unsent', slot: 'unsent — the booth, live', showSlot: true, tags: 'Final year project · Web design · Exhibition',
+          href: 'Unsent.dc.html', cta: 'View case study', hasImg: true, img: 'uploads/DSC01585.JPG', pos: '50% 50%', hatch: 'none',
+          blurb: 'My DGM final year project — a team exhibition where strangers wrote what they never said and pinned it to a wall. I designed the website that gave the show its digital home.' },
+        { n: '02', year: '2026', title: 'Frank', slot: 'frank — key visual', showSlot: false, tags: 'Product design · AI · UX writing',
+          href: 'Frank.dc.html', cta: 'View case study', hasImg: true, img: 'uploads/opt/frank-poster.jpg', pos: '50% 50%', hatch: 'none',
+          blurb: 'An AI design companion that refuses to be a shortcut — it blocks vague briefs, demands iteration rounds, and critiques your work the way a senior designer would.' },
+        { n: '03', year: '2026', title: 'AI & Creativity', slot: 'authored / generated', showSlot: false, tags: 'Creative tech · Generative · Interactive',
+          href: 'AI and Creativity.dc.html', cta: 'Try the piece', hasImg: true, img: 'uploads/opt/ai-keyvisual.jpg', pos: '50% 50%', hatch: 'none',
+          blurb: 'A working generative artefact, not a write-up. It hands you a rule set with no taste and asks you to sign one composition — the ratio of generated to signed is the argument about where the author sits.' }
+      ],
+      indexRows: [
+        { n: '04', title: 'Fern — Batik e-commerce redesign', role: 'IA · UX · UI', year: '2025', href: 'Fern.dc.html' },
+        { n: '05', title: 'Air Max — Product page study', role: 'UI · Self-directed', year: '2024', href: 'Nike Air Max.dc.html' },
+        { n: '06', title: 'Kuantan City — Campaign site & type system', role: 'Typography · UI', year: '2025', href: 'Kuantan City.dc.html' },
+        { n: '07', title: 'Bio Water Bottle — Product card study', role: 'UI · Self-directed', year: '2025', href: 'Bio Water Bottle.dc.html' },
+        { n: '08', title: 'Robert Fox — Portfolio wireframe study', role: 'IA · Wireframing', year: '2024', href: 'Robert Fox.dc.html' }
+      ],
+      facts: [
+        { v: '3.6', k: "GPA / Dean's List" },
+        { v: '12+', k: 'Projects shipped' },
+        { v: '3', k: 'Languages fluent' },
+        { v: '2027', k: 'Graduating' }
+      ],
+      skillGroups: [
+        { n: '01', label: 'Product & UX', note: 'Research → structure → prototype', items: ['UX research', 'Stakeholder interviews', 'Wireframing', 'Prototyping', 'Design systems', 'Heuristic evaluation'] },
+        { n: '02', label: 'Graphic & brand', note: 'Identity and printed matter', items: ['Logotype', 'Typography', 'Editorial layout', 'Packaging', 'Art direction', 'Campaign systems'] },
+        { n: '03', label: 'Creative technology', note: 'Making it move, making it real', items: ['HTML / CSS', 'Motion basics', 'Generative visuals', 'AI tooling'] },
+        { n: '04', label: 'Tools', note: 'Daily drivers', items: ['Figma', 'Illustrator', 'Photoshop', 'After Effects', 'Notion'] },
+        { n: '05', label: 'Language & voice', note: 'Tone as a design material', items: ['UX writing', 'English', 'Urdu', 'Hindi', 'Translation'] }
+      ],
+      contactLines: [
+        { k: 'E-mail', v: 'saharfatimaa2005@gmail.com', href: 'mailto:saharfatimaa2005@gmail.com' },
+        { k: 'Phone', v: '+60 116 125 4723', href: 'tel:+601161254723' },
+        { k: 'Based in', v: 'Malaysia', href: '#contact' }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>
